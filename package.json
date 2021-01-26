@@ -1,14 +1,14 @@
 {
   "name": "@pizzafinance/ui-sdk",
-  "version": "0.1.0",
-  "description": "Set of UI components for pizzafinance frontend",
+  "version": "0.1.1",
+  "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pizzafinance/ui-sdk",
+  "repository": "https://github.com/pancakeswap/pancake-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
@@ -16,7 +16,6 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "pack": "npm pack",
     "test": "jest",
     "release": "yarn build && np"
   },

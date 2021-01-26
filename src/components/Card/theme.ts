@@ -11,7 +11,7 @@ export type CardTheme = {
 
 export const light: CardTheme = {
   background: lightColors.card,
-  boxShadow: "0px 0px 20px rgba(9, 31, 67, 0.1)",
+  boxShadow: "0px 0px 10px rgba(9, 31, 67, 0.1)",
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,
   boxShadowWarning: shadows.warning,
@@ -19,7 +19,7 @@ export const light: CardTheme = {
 
 export const dark: CardTheme = {
   background: darkColors.card,
-  boxShadow: "0px 0px 20px rgba(9, 31, 67, 0.1)",
+  boxShadow: "0px 0px 10px rgba(9, 31, 67, 0.1)",
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,
   boxShadowWarning: shadows.warning,
