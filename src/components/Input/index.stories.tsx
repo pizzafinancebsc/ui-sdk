@@ -29,7 +29,11 @@ export const Default: React.FC = () => {
           <Heading mb="16px">{key}</Heading>
           <Row>
             <Input type="text" scale={scales[key]} value="Value" />
-            <Input type="text" scale={scales[key]} placeholder="Placeholder..." />
+            <Input
+              type="text"
+              scale={scales[key]}
+              placeholder="Placeholder..."
+            />
             <Input type="text" scale={scales[key]} value="Disabled" disabled />
             <Input type="text" scale={scales[key]} value="Success" isSuccess />
             <Input type="text" scale={scales[key]} value="Warning" isWarning />

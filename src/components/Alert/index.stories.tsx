@@ -22,13 +22,25 @@ export const Default: React.FC = () => {
         <Alert title="Info" description="A description of the info alert" />
       </Row>
       <Row>
-        <Alert title="Success" description="A description of the success alert" variant="success" />
+        <Alert
+          title="Success"
+          description="A description of the success alert"
+          variant="success"
+        />
       </Row>
       <Row>
-        <Alert title="Danger" description="A description of the danger alert" variant="danger" />
+        <Alert
+          title="Danger"
+          description="A description of the danger alert"
+          variant="danger"
+        />
       </Row>
       <Row>
-        <Alert title="Warning" description="A description of the warning alert" variant="warning" />
+        <Alert
+          title="Warning"
+          description="A description of the warning alert"
+          variant="warning"
+        />
       </Row>
     </div>
   );

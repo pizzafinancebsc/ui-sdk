@@ -3,7 +3,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { LogoIcon } from "../../components/Svg";
 import Flex from "../../components/Flex/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "./icons";
+import {
+  HamburgerIcon,
+  HamburgerCloseIcon,
+  LogoIcon as LogoWithText,
+} from "./icons";
 import MenuButton from "./MenuButton";
 
 interface Props {

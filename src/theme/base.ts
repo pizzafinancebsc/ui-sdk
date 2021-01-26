@@ -8,7 +8,9 @@ export const breakpointMap: { [key: string]: number } = {
   xl: 1080,
 };
 
-const breakpoints: Breakpoints = Object.values(breakpointMap).map((breakpoint) => `${breakpoint}px`);
+const breakpoints: Breakpoints = Object.values(breakpointMap).map(
+  (breakpoint) => `${breakpoint}px`
+);
 
 const mediaQueries: MediaQueries = {
   xs: `@media screen and (min-width: ${breakpointMap.xs}px)`,
@@ -20,7 +22,8 @@ const mediaQueries: MediaQueries = {
 };
 
 export const shadows = {
-  level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
+  level1:
+    "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
   active: "0px 0px 0px 1px #478bf1, 0px 0px 4px 8px rgba(31, 120, 212, 0.2)",
   success: "0px 0px 0px 1px #25d4aa, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
   warning: "0px 0px 0px 1px #ed4b5a, 0px 0px 0px 4px rgba(237, 75, 120, 0.2)",

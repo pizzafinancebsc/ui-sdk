@@ -36,11 +36,23 @@ const components = context.keys().reduce((accum, path) => {
 
 export const Icons: React.FC = () => {
   return (
-    <Flex justifyContent="start" alignItems="center" flexWrap="wrap" style={{ maxWidth: "800px" }}>
+    <Flex
+      justifyContent="start"
+      alignItems="center"
+      flexWrap="wrap"
+      style={{ maxWidth: "800px" }}
+    >
       {Object.keys(components).map((file) => {
         const Icon = components[file].default;
         return (
-          <Flex key={file} flexDirection="column" alignItems="center" py="4px" px="8px" mb="32px">
+          <Flex
+            key={file}
+            flexDirection="column"
+            alignItems="center"
+            py="4px"
+            px="8px"
+            mb="32px"
+          >
             <Icon size="32px" />
             <Text color="textSubtle" fontSize="12px">
               {file}

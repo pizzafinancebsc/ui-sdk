@@ -44,7 +44,12 @@ export const Variants: React.FC = () => {
   return (
     <BrowserRouter>
       <Row>
-        <Button as="a" href="https://pancakeswap.finance" target="_blank" rel="noreferrer">
+        <Button
+          as="a"
+          href="https://pancakeswap.finance"
+          target="_blank"
+          rel="noreferrer"
+        >
           As an anchor
         </Button>
         <Button as={Link} to="/router-link" variant="secondary">

@@ -5,7 +5,15 @@ import { RadioTheme } from "../components/Radio/types";
 import { ToggleTheme } from "../components/Toggle/types";
 import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
-import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
+import {
+  Colors,
+  Breakpoints,
+  MediaQueries,
+  Spacing,
+  Shadows,
+  Radii,
+  ZIndices,
+} from "./types";
 
 export interface PizzaTheme {
   siteWidth: number;

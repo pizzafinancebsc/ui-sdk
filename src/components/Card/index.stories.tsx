@@ -64,8 +64,17 @@ export const Ribbon: React.FC = () => {
         </Card>
       </Row>
       <Row>
-        <Card ribbon={<CardRibbon variantColor="textDisabled" text="Ribbon with Long Text" />}>
-          <CardBody style={{ height: "150px" }}>Ribbons will truncate when text is too long</CardBody>
+        <Card
+          ribbon={
+            <CardRibbon
+              variantColor="textDisabled"
+              text="Ribbon with Long Text"
+            />
+          }
+        >
+          <CardBody style={{ height: "150px" }}>
+            Ribbons will truncate when text is too long
+          </CardBody>
         </Card>
       </Row>
       <Row>
@@ -75,7 +84,9 @@ export const Ribbon: React.FC = () => {
       </Row>
       <Row>
         <Card ribbon={<CardRibbon variantColor="failure" text="Failure" />}>
-          <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
+          <CardBody style={{ height: "150px" }}>
+            Any Color in the theme
+          </CardBody>
         </Card>
       </Row>
     </div>

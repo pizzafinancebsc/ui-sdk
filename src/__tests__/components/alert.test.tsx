@@ -3,7 +3,9 @@ import { renderWithTheme } from "../../testHelpers";
 import { Alert } from "../../components/Alert";
 
 it("renders correctly", () => {
-  const { asFragment } = renderWithTheme(<Alert title="Alert title" description="Alert description" />);
+  const { asFragment } = renderWithTheme(
+    <Alert title="Alert title" description="Alert description" />
+  );
 
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>

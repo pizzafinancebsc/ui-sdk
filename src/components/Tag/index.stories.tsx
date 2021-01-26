@@ -46,14 +46,22 @@ export const WithIcon: React.FC = () => {
     <>
       <Row>
         {Object.keys(variants).map((variant) => (
-          <Tag key={variant} variant={variants[variant]} startIcon={<CommunityIcon />}>
+          <Tag
+            key={variant}
+            variant={variants[variant]}
+            startIcon={<CommunityIcon />}
+          >
             Start Icon
           </Tag>
         ))}
       </Row>
       <Row>
         {Object.keys(variants).map((variant) => (
-          <Tag key={variant} variant={variants[variant]} endIcon={<RemoveIcon width="14px" />}>
+          <Tag
+            key={variant}
+            variant={variants[variant]}
+            endIcon={<RemoveIcon width="14px" />}
+          >
             End Icon
           </Tag>
         ))}

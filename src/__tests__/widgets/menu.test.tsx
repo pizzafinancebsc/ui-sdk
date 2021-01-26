@@ -21,7 +21,10 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+const langs: LangType[] = [...Array(20)].map((_, i) => ({
+  code: `en${i}`,
+  language: `English${i}`,
+}));
 
 it("renders correctly", () => {
   const { asFragment } = renderWithTheme(

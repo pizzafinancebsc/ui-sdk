@@ -30,11 +30,15 @@ const mediaQueries: MediaQueries = (() => {
     // Min width for next iteration
     prevMinWidth = breakpoint + 1;
 
-    return { ...accum, [size]: `(min-width: ${minWidth}px) and (max-width: ${breakpoint}px)` };
+    return {
+      ...accum,
+      [size]: `(min-width: ${minWidth}px) and (max-width: ${breakpoint}px)`,
+    };
   }, {});
 })();
 
-const getKey = (size: string) => `is${size.charAt(0).toUpperCase()}${size.slice(1)}`;
+const getKey = (size: string) =>
+  `is${size.charAt(0).toUpperCase()}${size.slice(1)}`;
 
 const useMatchBreakpoints = (): State => {
   const [state, setState] = useState<State>(() => {

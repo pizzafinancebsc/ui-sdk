@@ -12,14 +12,17 @@ const ButtonMenu: React.FC<ButtonMenuProps> = ({
 }) => {
   return (
     <StyledButtonMenu variant={variant}>
-      {Children.map(children, (child: ReactElement<ButtonMenuItemProps>, index) => {
-        return cloneElement(child, {
-          isActive: activeIndex === index,
-          onClick: onClick ? () => onClick(index) : undefined,
-          size,
-          variant,
-        });
-      })}
+      {Children.map(
+        children,
+        (child: ReactElement<ButtonMenuItemProps>, index) => {
+          return cloneElement(child, {
+            isActive: activeIndex === index,
+            onClick: onClick ? () => onClick(index) : undefined,
+            size,
+            variant,
+          });
+        }
+      )}
     </StyledButtonMenu>
   );
 };

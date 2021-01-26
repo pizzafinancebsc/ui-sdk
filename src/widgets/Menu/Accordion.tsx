@@ -18,16 +18,28 @@ const Container = styled.div`
   flex-shrink: 0;
 `;
 
-const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`
+const AccordionContent = styled.div<{
+  isOpen: boolean;
+  isPushed: boolean;
+  maxHeight: number;
+}>`
   max-height: ${({ isOpen, maxHeight }) => (isOpen ? `${maxHeight}px` : 0)};
   transition: max-height 0.3s ease-out;
   overflow: hidden;
-  border-color: ${({ isOpen, isPushed }) => (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent")};
+  border-color: ${({ isOpen, isPushed }) =>
+    isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent"};
   border-style: solid;
   border-width: 1px;
 `;
 
-const Accordion: React.FC<Props> = ({ label, icon, isPushed, pushNav, initialOpenState = false, children }) => {
+const Accordion: React.FC<Props> = ({
+  label,
+  icon,
+  isPushed,
+  pushNav,
+  initialOpenState = false,
+  children,
+}) => {
   const [isOpen, setIsOpen] = useState(initialOpenState);
 
   const handleClick = () => {

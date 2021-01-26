@@ -26,7 +26,9 @@ export const Default: React.FC = () => {
   };
 
   const handleRemove = (id: string) => {
-    setToasts((prevToasts) => prevToasts.filter((prevToast) => prevToast.id !== id));
+    setToasts((prevToasts) =>
+      prevToasts.filter((prevToast) => prevToast.id !== id)
+    );
   };
 
   return (
@@ -38,7 +40,9 @@ export const Default: React.FC = () => {
         type="button"
         variant="secondary"
         ml="8px"
-        onClick={() => handleClick("This is a description to explain more about the toast")}
+        onClick={() =>
+          handleClick("This is a description to explain more about the toast")
+        }
       >
         Random Toast with Description
       </Button>
