@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
 import Text from "../../components/Text/Text";
+import CrText from "../../components/Text/CrText";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Link from "../../components/Link/Link";
@@ -79,7 +80,7 @@ const PanelFooter: React.FC<Props> = ({
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink
-            href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+            href="https://info.cheeseswap.app/token/0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB"
             target="_blank"
           >
             <PancakeRoundIcon width="24px" mr="8px" />
@@ -167,6 +168,8 @@ const PanelFooter: React.FC<Props> = ({
           ))}
         </Dropdown>
       </SettingsEntry>
+      <CrText color="text">Copyright | 2021. © Swapgate Ltd. London, UK</CrText>
+      <CrText color="text">Reg No: 12864908 | License: GNU-AGPL v3.0 </CrText>
     </Container>
   );
 };
