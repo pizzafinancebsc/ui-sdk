@@ -1658,12 +1658,12 @@ var Icon$D = function (props) {
 var rotate$1 = keyframes(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var float = keyframes(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
 var Container$1 = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var RotatingPancakeIcon = styled(Icon$D)(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
+var RotatingPizzaIcon = styled(Icon$D)(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
 var FloatingPanIcon = styled(Icon$C)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
 var Spinner = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 128 : _b;
     return (React.createElement(Container$1, null,
-        React.createElement(RotatingPancakeIcon, { width: size * 0.5 + "px" }),
+        React.createElement(RotatingPizzaIcon, { width: size * 0.5 + "px" }),
         React.createElement(FloatingPanIcon, { width: size + "px" })));
 };
 var templateObject_1$q, templateObject_2$6, templateObject_3$2, templateObject_4$1, templateObject_5;
@@ -2261,7 +2261,7 @@ var useParticleBurst = function (options) {
     return { initialize: initialize, teardown: teardown };
 };
 
-var StyledModal = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
+var StyledModal = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 2px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 2px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {
@@ -2570,11 +2570,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://swap.pizzafinance.app",
+                href: "https://cheeseswap.app/#/swap",
             },
             {
                 label: "Liquidity",
-                href: "https://swap.pizzafinance.app/#/pool",
+                href: "https://cheeseswap.app/#/pool",
             },
         ],
     },
@@ -2586,7 +2586,7 @@ var links = [
     {
         label: "Pools",
         icon: "PoolIcon",
-        href: "/syrup",
+        href: "/pasta",
     },
     {
         label: "Lottery",
@@ -2604,19 +2604,19 @@ var links = [
         items: [
             {
                 label: "Overview",
-                href: "https://info.pizzafinance.app",
+                href: "https://info.cheeseswap.app/home",
             },
             {
                 label: "Tokens",
-                href: "https://info.pizzafinance.app/tokens",
+                href: "https://info.cheeseswap.app/tokens",
             },
             {
                 label: "Pairs",
-                href: "https://info.pizzafinance.app/pairs",
+                href: "https://info.cheeseswap.app/pairs",
             },
             {
                 label: "Accounts",
-                href: "https://info.pizzafinance.app/accounts",
+                href: "https://info.cheeseswap.app/accounts",
             },
         ],
     },
@@ -2799,7 +2799,7 @@ var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTempl
 var SettingsEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, pizzaPriceUsd = _a.pizzaPriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     if (!isPushed) {
         return (React.createElement(Container$4, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2807,9 +2807,9 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
-            cakePriceUsd ? (React.createElement(PriceLink, { href: "https://info.cheeseswap.app/token/0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB", target: "_blank" },
+            pizzaPriceUsd ? (React.createElement(PriceLink, { href: "https://info.cheeseswap.app/token/0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB", target: "_blank" },
                 React.createElement(Icon$r, { width: "24px", mr: "8px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + pizzaPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
                 var iconProps = {
@@ -3000,7 +3000,7 @@ var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React.createElement(HelpLink, { href: "https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain", external: true },
+        React.createElement(HelpLink, { href: "https://docs.pizzafinance.app/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain", external: true },
             React.createElement(Icon$k, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };
@@ -3072,7 +3072,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$2 || (templateObject_5$
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, pizzaPriceUsd = _a.pizzaPriceUsd, links = _a.links, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -3107,7 +3107,7 @@ var Menu = function (_a) {
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(UserBlock, { account: account, login: login, logout: logout })),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, pizzaPriceUsd: pizzaPriceUsd, pushNav: setIsPushed, links: links }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
@@ -3347,4 +3347,4 @@ var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, button
 
 var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light, button: light$1, colors: lightColors, card: light$2, toggle: light$4, nav: light$5, modal: light$6, radio: light$3 });
 
-export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowDownIcon, Icon$6 as ArrowDropDownIcon, Icon$7 as ArrowDropUpIcon, Icon$8 as ArrowForwardIcon, Icon$9 as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$a as BinanceIcon, Icon$2 as BlockIcon, Breadcrumbs, Button, ButtonMenu, ButtonMenuItem, Icon$c as CalculateIcon, Card, CardBody, CardFooter, CardRibbon, Icon$b as CardViewIcon, GridLayout$1 as CardsLayout, Checkbox, Icon as CheckmarkCircleIcon, Icon$d as CheckmarkIcon, Icon$e as ChevronDownIcon, Icon$f as ChevronRightIcon, Icon$g as ChevronUpIcon, Icon$h as CloseIcon, Icon$i as CogIcon, Icon$j as CommunityIcon, Dropdown, Icon$1 as ErrorIcon, Flex, Heading, Icon$k as HelpIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$l as ListViewIcon, Icon$m as LogoIcon, Icon$n as LogoRoundIcon, Menu, Icon$o as MinusIcon, Modal, ModalProvider, Icon$p as OpenNewIcon, Icon$r as PancakeRoundIcon, Icon$q as PancakesIcon, Progress, Icon$u as ProgressBunny, Radio, Icon$s as RemoveIcon, ResetCSS, Icon$y as SearchIcon, Skeleton, Spinner, Svg, Icon$z as SwapVertIcon, Icon$A as SyncAltIcon, Tag, Text, Icon$w as Ticket, Icon$x as TicketRound, ToastContainer, Toggle, Icon$t as VerifiedIcon, Icon$B as WarningIcon, Icon$v as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
+export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowDownIcon, Icon$6 as ArrowDropDownIcon, Icon$7 as ArrowDropUpIcon, Icon$8 as ArrowForwardIcon, Icon$9 as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$a as BinanceIcon, Icon$2 as BlockIcon, Breadcrumbs, Button, ButtonMenu, ButtonMenuItem, Icon$c as CalculateIcon, Card, CardBody, CardFooter, CardRibbon, Icon$b as CardViewIcon, GridLayout$1 as CardsLayout, Checkbox, Icon as CheckmarkCircleIcon, Icon$d as CheckmarkIcon, Icon$e as ChevronDownIcon, Icon$f as ChevronRightIcon, Icon$g as ChevronUpIcon, Icon$h as CloseIcon, Icon$i as CogIcon, Icon$j as CommunityIcon, Dropdown, Icon$1 as ErrorIcon, Flex, Heading, Icon$k as HelpIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$l as ListViewIcon, Icon$m as LogoIcon, Icon$n as LogoRoundIcon, Menu, Icon$o as MinusIcon, Modal, ModalProvider, Icon$p as OpenNewIcon, Icon$r as PizzaRoundIcon, Icon$q as PizzasIcon, Progress, Icon$u as ProgressBunny, Radio, Icon$s as RemoveIcon, ResetCSS, Icon$y as SearchIcon, Skeleton, Spinner, Svg, Icon$z as SwapVertIcon, Icon$A as SyncAltIcon, Tag, Text, Icon$w as Ticket, Icon$x as TicketRound, ToastContainer, Toggle, Icon$t as VerifiedIcon, Icon$B as WarningIcon, Icon$v as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };

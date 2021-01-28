@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/@pizzafinance/ui-sdk)](https://www.npmjs.com/package/@pizzafinance/ui-sdk) [![Size](https://img.shields.io/bundlephobia/min/@pizzafinance/ui-sdk)](https://www.npmjs.com/package/@pizzafinance/ui-sdk)
 
-@pizzafinance/ui-sdk is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
+@pizzafinance/ui-sdk is a set of React components and hooks used to build pages on Pizza's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { PizzaRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import CrText from "../../components/Text/CrText";
 import Flex from "../../components/Flex/Flex";
@@ -60,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
-  cakePriceUsd,
+  pizzaPriceUsd,
   currentLang,
   langs,
   setLang,
@@ -78,13 +78,13 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        {cakePriceUsd ? (
+        {pizzaPriceUsd ? (
           <PriceLink
             href="https://info.cheeseswap.app/token/0x2cc26dd730F548dc4ac291ae7D84a0C96980d2cB"
             target="_blank"
           >
-            <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <PizzaRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${pizzaPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />

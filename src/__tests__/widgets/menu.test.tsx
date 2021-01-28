@@ -38,7 +38,7 @@ it("renders correctly", () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        pizzaPriceUsd={0.23158668932877668}
         links={menuConfig}
       >
         body
@@ -74,7 +74,7 @@ it("renders correctly", () => {
               </svg>
             </button>
             <a
-              aria-label="Pancake home page"
+              aria-label="Pizza home page"
               class="sc-jSgupP jRnhKc"
               href="/"
             >
@@ -317,7 +317,7 @@ it("renders correctly", () => {
                 role="button"
               >
                 <a
-                  href="/syrup"
+                  href="/pasta"
                 >
                   <svg
                     class="sc-gsTCUz ldLGgy"

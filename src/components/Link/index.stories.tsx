@@ -1,5 +1,5 @@
 import React from "react";
-import { PancakesIcon } from "../Svg";
+import { PizzasIcon } from "../Svg";
 import { Link, LinkExternal } from "./index";
 
 export default {
@@ -38,7 +38,7 @@ export const Default: React.FC = () => {
       <div>
         <Link href="/">
           With icon
-          <PancakesIcon />
+          <PizzasIcon />
         </Link>
       </div>
       <div>

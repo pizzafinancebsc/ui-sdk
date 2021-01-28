@@ -4,14 +4,14 @@ import { Link, LinkExternal } from "../../components/Link";
 
 it("renders link correctly", () => {
   const { asFragment } = renderWithTheme(
-    <Link href="https://pancakeswap.finance">Link</Link>
+    <Link href="https://pizzafinance.app">Link</Link>
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <a
         class="sc-bdfBwQ sc-gsTCUz cxXgLd djpNeP"
         color="primary"
-        href="https://pancakeswap.finance"
+        href="https://pizzafinance.app"
       >
         Link
       </a>
@@ -21,14 +21,14 @@ it("renders link correctly", () => {
 
 it("renders link external link correctly", () => {
   const { asFragment } = renderWithTheme(
-    <LinkExternal href="https://pancakeswap.finance">Link</LinkExternal>
+    <LinkExternal href="https://pizzafinance.app">Link</LinkExternal>
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <a
         class="sc-bdfBwQ sc-gsTCUz cxXgLd djpNeP"
         color="primary"
-        href="https://pancakeswap.finance"
+        href="https://pizzafinance.app"
         rel="noreferrer noopener"
         target="_blank"
       >
